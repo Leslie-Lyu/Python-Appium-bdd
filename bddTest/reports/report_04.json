@@ -1,0 +1,444 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:4",
+      "name": "Launch app and direct to login page",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/bvtest.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:15"
+          },
+          "name": "opened BV app",
+          "result": {
+            "duration": 0.0,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:19"
+          },
+          "name": "switch to login page",
+          "result": {
+            "duration": 4.7062132358551025,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:28"
+          },
+          "name": "should see login page",
+          "result": {
+            "duration": 3.5241587162017822,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:11",
+      "name": "Test login function",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/bvtest.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:37"
+          },
+          "name": "login page is displayed",
+          "result": {
+            "duration": 0.0009975433349609375,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:13",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:41"
+          },
+          "name": "key in wrong password",
+          "result": {
+            "duration": 7.41615891456604,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:49"
+          },
+          "name": "wrong passrord message prompts",
+          "result": {
+            "duration": 1.834049940109253,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:57"
+          },
+          "name": "key in correct password",
+          "result": {
+            "duration": 6.807058572769165,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:67"
+          },
+          "name": "it directs to PIN page",
+          "result": {
+            "duration": 8.051957607269287,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/bvtest.feature:17",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:74"
+          },
+          "name": "create/Keyin PIN",
+          "result": {
+            "duration": 6.265723705291748,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:19",
+      "name": "If login succeeded",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:20",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:96"
+          },
+          "name": "should see home page",
+          "result": {
+            "duration": 5.0806169509887695,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:35",
+      "name": "Test homepage date display",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:36",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:21"
+          },
+          "name": "successful login and in home page",
+          "result": {
+            "duration": 0.0010297298431396484,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:37",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:26"
+          },
+          "name": "check date displayed",
+          "result": {
+            "duration": 3.121458053588867,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/bvtest.feature:39",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:45"
+          },
+          "name": "check search bar and filter function",
+          "result": {
+            "duration": 0.0,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:41",
+      "name": "Test navbar",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/bvtest.feature:42",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:50"
+          },
+          "name": "display home page",
+          "result": {
+            "duration": 0.0009982585906982422,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:43",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:55"
+          },
+          "name": "click third button",
+          "result": {
+            "duration": 0.741563081741333,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:44",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:60"
+          },
+          "name": "display user page",
+          "result": {
+            "duration": 0.0718085765838623,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:45",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:66"
+          },
+          "name": "click second button",
+          "result": {
+            "duration": 0.7140724658966064,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:46",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:71"
+          },
+          "name": "display item page",
+          "result": {
+            "duration": 0.0608370304107666,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:47",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:77"
+          },
+          "name": "click first button",
+          "result": {
+            "duration": 0.7032487392425537,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:48",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:82"
+          },
+          "name": "display home page again",
+          "result": {
+            "duration": 0.052857398986816406,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:50",
+      "name": "Test unhandled resolution",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/bvtest.feature:51",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:88"
+          },
+          "name": "check any unhandled resolution exists",
+          "result": {
+            "duration": 5.220764875411987,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:52",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:106"
+          },
+          "name": "unhandled resolution exists",
+          "result": {
+            "duration": 0.0,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:53",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:111"
+          },
+          "name": "test basic function in resolution",
+          "result": {
+            "duration": 27.23737120628357,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:55",
+      "name": "Test unhandled shcedule",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/bvtest.feature:56",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/testcase.py:186"
+          },
+          "name": "check any unhandled schedule exists",
+          "result": {
+            "duration": 5.237644672393799,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"d:\\python37\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"d:\\python37\\lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"features\\steps\\testcase.py\", line 190, in check_unhandled_schedule",
+              "    wait_load_by_id(context.driver, 5, HomePage.filterBtn_id)",
+              "  File \"D:\\bddTest\\features\\action\\actions.py\", line 15, in wait_load_by_id",
+              "    lambda sdriver: driver.find_element_by_id(element_id).is_displayed())",
+              "  File \"d:\\python37\\lib\\site-packages\\selenium\\webdriver\\support\\wait.py\", line 80, in until",
+              "    raise TimeoutException(message, screen, stacktrace)",
+              "selenium.common.exceptions.TimeoutException: Message: ",
+              ""
+            ],
+            "status": "failed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:57",
+          "name": "unhandled shcedule exists",
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:58",
+          "name": "test basic function in shcedule",
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/bvtest.feature:2",
+  "name": "Conduct test scenarios on BV",
+  "status": "failed",
+  "tags": []
+}
+]

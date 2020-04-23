@@ -1,0 +1,141 @@
+<testsuite errors="1" failures="0" hostname="PF0VXQU6" name="bvtest.Conduct test scenarios on BV" skipped="2" tests="9" time="55.314535" timestamp="2019-12-03T15:38:06.941239"><testcase classname="bvtest.Conduct test scenarios on BV" name="Launch app and direct to login page" status="passed" time="6.163114"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Launch app and direct to login page
+    Given opened BV app ... passed in 0.001s
+    When switch to login page ... passed in 3.750s
+    Then should see login page ... passed in 2.412s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test login function" status="passed" time="29.988863"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test login function
+    Given login page is displayed ... passed in 0.001s
+    When key in wrong password ... passed in 6.962s
+    Then wrong passrord message prompts ... passed in 1.729s
+    When key in correct password ... passed in 6.929s
+    Then it directs to PIN page ... passed in 8.081s
+    And create/Keyin PIN ... passed in 6.286s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="If login succeeded" status="passed" time="5.067204"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: If login succeeded
+    Then should see home page ... passed in 5.067s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test homepage date display" status="passed" time="3.100018"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test homepage date display
+    When successful login ... passed in 0.000s
+    Then check date displayed ... passed in 3.100s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test navbar" status="passed" time="2.3318"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test navbar
+    Given display home page ... passed in 0.000s
+    When click third button ... passed in 0.723s
+    Then display user page ... passed in 0.056s
+    When click second button ... passed in 0.697s
+    Then display item page ... passed in 0.071s
+    When click first button ... passed in 0.717s
+    Then display home page again ... passed in 0.069s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test unhandled resolution" status="passed" time="7.84691"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test unhandled resolution
+    Given check any unhandled resolution exists ... passed in 5.465s
+    When unhandled resolution exists ... passed in 0.000s
+    Then test basic function in resolution ... passed in 2.382s
+
+@scenario.end
+--------------------------------------------------------------------------------
+
+Captured stdout:
+No unhandled resolution.
+
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test unhandled shcedule" status="failed" time="0.816626"><error message="Message: An element could not be located on the page using the given search parameters.&#10;" type="NoSuchElementException">
+<![CDATA[
+Failing step: Given check any unhandled schedule exists ... failed in 0.817s
+Location: features/bvtest.feature:41
+Traceback (most recent call last):
+  File "d:\python37\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "d:\python37\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "features\steps\testcase.py", line 161, in check_unhandled_schedule
+    clickFilter(context.driver)
+  File "D:\bddTest\features\action\unhandled_event.py", line 6, in clickFilter
+    click_by_id(driver, HomePage.filterBtn)
+  File "D:\bddTest\features\action\actions.py", line 5, in click_by_id
+    driver.find_element_by_id(element_id).click()
+  File "d:\python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 360, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "d:\python37\lib\site-packages\appium\webdriver\webdriver.py", line 276, in find_element
+    'value': value})['value']
+  File "d:\python37\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 321, in execute
+    self.error_handler.check_response(response)
+  File "d:\python37\lib\site-packages\appium\webdriver\errorhandler.py", line 29, in check_response
+    raise wde
+  File "d:\python37\lib\site-packages\appium\webdriver\errorhandler.py", line 24, in check_response
+    super(MobileErrorHandler, self).check_response(response)
+  File "d:\python37\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 242, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: An element could not be located on the page using the given search parameters.
+
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test unhandled shcedule
+    Given check any unhandled schedule exists ... failed in 0.817s
+    When unhandled shcedule exists ... skipped in 0.000s
+    Then test basic function in shcedule ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test unhandled meeting" status="untested" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test unhandled meeting
+    Given check any unhandled meeting exists ... untested in 0.000s
+    When unhandled meeting exists ... untested in 0.000s
+    Then test basic function in meeting ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test user page" status="untested" time="0"><skipped /><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test user page
+    Given directs to user page ... untested in 0.000s
+    When switch to my profile page ... untested in 0.000s
+    Then check login info ... untested in 0.000s
+    When directs to setting page ... untested in 0.000s
+    Then change PIN and check if saved successfully ... untested in 0.000s
+    And signout in the end ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

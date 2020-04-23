@@ -1,0 +1,131 @@
+<testsuite errors="1" failures="0" hostname="JBNRCV00R179451" name="bvtest.Conduct test scenarios on BV" skipped="0" tests="9" time="29.989547" timestamp="2020-02-13T00:59:40.434512"><testcase classname="bvtest.Conduct test scenarios on BV" name="Launch app and direct to login page" status="passed" time="7.101686"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Launch app and direct to login page
+    Given opened BV app ... passed in 0.000s
+    When switch to login page ... passed in 5.717s
+    Then should see login page ... passed in 1.385s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test login function" status="failed" time="22.887861"><error message="Check_PIN_page can't normally work." type="Exception">
+<![CDATA[
+Failing step: Then it directs to PIN page ... failed in 8.748s
+Location: features/bvtest.feature:16
+Traceback (most recent call last):
+  File "D:\bddTest\features\action\screenShot.py", line 22, in wrapper
+    func(context, *args, **kwargs)
+  File "features\steps\login.py", line 73, in Check_PIN_page
+    assert context.withoutPIN == True, "After login, failed to direct to PIN page."
+AssertionError: After login, failed to direct to PIN page.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\python37\lib\site-packages\behave\model.py", line 1329, in run
+    match.run(runner.context)
+  File "d:\python37\lib\site-packages\behave\matchers.py", line 98, in run
+    self.func(context, *args, **kwargs)
+  File "D:\bddTest\features\action\screenShot.py", line 29, in wrapper
+    raise Exception(func.__name__+" can't normally work.")
+Exception: Check_PIN_page can't normally work.
+]]>
+</error><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test login function
+    Given login page is displayed ... passed in 0.000s
+    When key in user account and wrong password "11111111" ... passed in 6.834s
+    Then wrong passrord message prompts ... passed in 1.647s
+    When key in correct password ... passed in 5.658s
+    Then it directs to PIN page ... failed in 8.748s
+    And create/Keyin PIN ... skipped in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="If login succeeded" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: If login succeeded
+    Then should see home page ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test homepage date display" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test homepage date display
+    When successful login and in home page ... untested in 0.000s
+    Then check date displayed ... untested in 0.000s
+    And check search bar function with searching "xxxxxxxx" ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test navbar" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test navbar
+    Given display home page ... untested in 0.000s
+    When click third button ... untested in 0.000s
+    Then display user page ... untested in 0.000s
+    When click second button ... untested in 0.000s
+    Then display item page ... untested in 0.000s
+    And check search bar function by serching "xxxxxxxx" and search "test", then test filter ... untested in 0.000s
+    When click first button ... untested in 0.000s
+    Then display home page again ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test unhandled resolution" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test unhandled resolution
+    Given check any unhandled resolution exists ... untested in 0.000s
+    When unhandled resolution exists ... untested in 0.000s
+    Then test basic function in resolution ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test unhandled shcedule" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test unhandled shcedule
+    Given check any unhandled schedule exists ... untested in 0.000s
+    When unhandled shcedule exists ... untested in 0.000s
+    Then test basic function in shcedule ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test unhandled meeting" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test unhandled meeting
+    Given check any unhandled meeting exists ... untested in 0.000s
+    When unhandled meeting exists ... untested in 0.000s
+    Then test basic function in meeting ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="bvtest.Conduct test scenarios on BV" name="Test user page" status="untested" time="0"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Test user page
+    Given directs to user page ... untested in 0.000s
+    When switch to my profile page ... untested in 0.000s
+    Then check login info ... untested in 0.000s
+    When directs to setting page ... untested in 0.000s
+    Then change PIN and check if saved successfully ... untested in 0.000s
+    And signout in the end ... untested in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

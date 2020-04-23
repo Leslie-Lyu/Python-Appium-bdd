@@ -1,0 +1,173 @@
+[
+{
+  "elements": [
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:4",
+      "name": "Launch app and direct to login page",
+      "status": "passed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/bvtest.feature:5",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:15"
+          },
+          "name": "opened BV app",
+          "result": {
+            "duration": 0.0,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:6",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:19"
+          },
+          "name": "switch to login page",
+          "result": {
+            "duration": 5.717154026031494,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:7",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:28"
+          },
+          "name": "should see login page",
+          "result": {
+            "duration": 1.3845322132110596,
+            "status": "passed"
+          },
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    },
+    {
+      "keyword": "Scenario",
+      "location": "features/bvtest.feature:11",
+      "name": "Test login function",
+      "status": "failed",
+      "steps": [
+        {
+          "keyword": "Given",
+          "location": "features/bvtest.feature:12",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:37"
+          },
+          "name": "login page is displayed",
+          "result": {
+            "duration": 0.00011587142944335938,
+            "status": "passed"
+          },
+          "step_type": "given"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:13",
+          "match": {
+            "arguments": [
+              {
+                "name": "wrong_pw",
+                "value": "11111111"
+              }
+            ],
+            "location": "features/steps/login.py:42"
+          },
+          "name": "key in user account and wrong password \"11111111\"",
+          "result": {
+            "duration": 6.834455490112305,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:14",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:50"
+          },
+          "name": "wrong passrord message prompts",
+          "result": {
+            "duration": 1.646888256072998,
+            "status": "passed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "When",
+          "location": "features/bvtest.feature:15",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:58"
+          },
+          "name": "key in correct password",
+          "result": {
+            "duration": 5.658341884613037,
+            "status": "passed"
+          },
+          "step_type": "when"
+        },
+        {
+          "keyword": "Then",
+          "location": "features/bvtest.feature:16",
+          "match": {
+            "arguments": [],
+            "location": "features/steps/login.py:68"
+          },
+          "name": "it directs to PIN page",
+          "result": {
+            "duration": 8.748059272766113,
+            "error_message": [
+              "Traceback (most recent call last):",
+              "  File \"D:\\bddTest\\features\\action\\screenShot.py\", line 22, in wrapper",
+              "    func(context, *args, **kwargs)",
+              "  File \"features\\steps\\login.py\", line 73, in Check_PIN_page",
+              "    assert context.withoutPIN == True, \"After login, failed to direct to PIN page.\"",
+              "AssertionError: After login, failed to direct to PIN page.",
+              "",
+              "During handling of the above exception, another exception occurred:",
+              "",
+              "Traceback (most recent call last):",
+              "  File \"d:\\python37\\lib\\site-packages\\behave\\model.py\", line 1329, in run",
+              "    match.run(runner.context)",
+              "  File \"d:\\python37\\lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+              "    self.func(context, *args, **kwargs)",
+              "  File \"D:\\bddTest\\features\\action\\screenShot.py\", line 29, in wrapper",
+              "    raise Exception(func.__name__+\" can't normally work.\")",
+              "Exception: Check_PIN_page can't normally work."
+            ],
+            "status": "failed"
+          },
+          "step_type": "then"
+        },
+        {
+          "keyword": "And",
+          "location": "features/bvtest.feature:17",
+          "name": "create/Keyin PIN",
+          "step_type": "then"
+        }
+      ],
+      "tags": [],
+      "type": "scenario"
+    }
+  ],
+  "keyword": "Feature",
+  "location": "features/bvtest.feature:2",
+  "name": "Conduct test scenarios on BV",
+  "status": "failed",
+  "tags": []
+}
+]
