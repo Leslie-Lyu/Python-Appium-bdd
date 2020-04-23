@@ -8,11 +8,7 @@ Comment To-do marks functions unfinished or to optimize in future.
 
 Comment To-adjust marks parameters or functions need to change accordingly before execution.
 
-Major To-do issues: 
-    automate keyin OTP
-    
-    Add more practical test cases
-    Do the modification based on apk version
+This is more like an attempt into auto-test tech. In other words, this is a prototype version, which needs optimisation with developing my skill.
     
     
 
