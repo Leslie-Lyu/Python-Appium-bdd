@@ -8,7 +8,7 @@ class ItemPage():
     resolutionSwitch_id = "sg.com"
     scheduleSwitch_id = "sg.com"
     meetingSwitch_id = "sg.com"
-    showResultsBtn_id = "sg.com.trustedsource.boardVision:id/decline"
+    showResultsBtn_id = "sg.com"
 
     searchBarBtn_id = "sg.com"
     searchBtn_id = "sg.com"
